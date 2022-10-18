@@ -2,7 +2,7 @@
 /************ PRINT CHAR ***************/
 /**
  * print_char - Print a char
- * @types: List a of arguments 
+ * @types: List a of arguments
  * @buffer: Buffer array to handle print
  * @flags: calulates active flags
  * @width: width
@@ -14,7 +14,7 @@ int print_char(va_list types, char buffer[],
 int flags, int width, int precision, int size)
 {
 char c = va_arg(types, int);
-return (handle_write_char(c, buffer, flags, width, precision, size))
+return (handle_write_char(c, buffer, flags, width, precision, size));
 }
 /*********** PRINT A STRING ************/
 /**
@@ -128,7 +128,7 @@ return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 /*********** PRINT BINARY ***********/
 /**
- * print_binary Prints and unsigned number
+ * print_binary - Prints and unsigned number
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags: Calculates active flags
@@ -146,8 +146,8 @@ int count;
 
 UNUSED(buffer);
 UNUSED(flags);
-UNUSED(width); 
-UNUSED(precision); 
+UNUSED(width);
+UNUSED(precision);
 UNUSED(size);
 
 n = va_arg(types, unsigned int);
@@ -164,7 +164,7 @@ sum += a[i];
 if (sum || i == 31)
 {
 char z = '0' + a[i];
-write (1, &z, 1);
+write(1, &z, 1);
 count++;
 }
 }
