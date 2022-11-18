@@ -1,4 +1,4 @@
-# This is the group project
-> Printf Task
-> Authors : Kefuoe Sole and Francis Rakuoane
+# 0x11. C - printf team project
+> Updated Files
+> Authors : Kefuoe Sole And Francis Rakuoane
 
